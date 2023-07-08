@@ -1,0 +1,73 @@
+.post__baggage{
+    position: relative;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 17px 20px 12px;
+    width: 1036px;
+    height: 295px;
+    &_forms{
+        margin-top: 21px;
+    }
+    &_form{
+        &:last-of-type {
+            margin-top: 17px;
+        }
+    }
+    &_subtitle{
+        display: block;
+        color: $gray;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &_drop{
+        display: block;
+        border-radius: 8px;
+        border: 1px solid #EAECF0;
+        background: #F9FAFB;
+        width: 996px;
+        padding: 8px 12px;
+        color: $gray;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &_btn{
+        position: absolute;
+        bottom: 12px;
+        right: 20px;
+        width: 88px;
+        padding: 10px 16px;
+        align-items: center;
+        border: none;
+        border-radius: 8px;
+        background: $green;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+    }
+}
+
+.line{
+    &__dashed {
+        margin-top: 84px;
+        border: none;
+        border-top: var(--line-width, 1.4px) dashed var(--line-color, #FFFFFF);
+        width: 144px;
+        &_active {
+            --line-color:#009FE3;
+        }
+    }
+    &__main{
+        width: 1160px;
+        border: none;
+        border-top: 1px solid #EAECF0;
+        margin-left: -62px;
+        margin-top: 27px;
+    }
+}

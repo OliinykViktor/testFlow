@@ -1,0 +1,33 @@
+.post{
+    &__steps{
+        margin-top: 59px;
+        margin-bottom: 22px;
+        display: flex;
+        height: 204px;
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    }
+    &__step{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        &_circle{
+            margin: 0;
+            width: 72px;
+            height: 72px;
+            flex-shrink: 0;
+            border-radius: 72px;
+            border: 1px solid #EAECF0;
+            background:#EAECF0;
+            margin-bottom: 16px;
+            border-radius: 72px;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            &_active{
+                background: $green;
+                border: 1px solid $gray;
+            }
+        }
+    }
+}

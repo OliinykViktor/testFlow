@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.post__wrap{
+    width: 1440px;
+    height: 826px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(100, auto));
+    grid-template-areas: 
+    "sidebar inform"
+}
+
+.post__inform{
+    width: 1164px;
+    background: #F6F7FA;
+    padding: 44px 66px 37px 62px;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+
+#inform{
+    grid-area: inform;
+}
+
+@import 'base/variables';
+@import 'base/title';
+
+
+@import 'blocks/sidebar';
+@import 'blocks/steps';
+@import 'blocks/details';
+@import 'blocks/baggage';
+
+
+.hide{
+    border-top: 1.4px dashed white;
+}
